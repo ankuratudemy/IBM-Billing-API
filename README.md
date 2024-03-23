@@ -12,7 +12,9 @@ This repository contains a Flask application that provides an API for fetching I
 
 2. run app.py as api locally:
 
-   curl --location 'http://127.0.0.1:5000/billing' \
+   **python app.py**
+
+   ```curl --location 'http://127.0.0.1:5000/billing' \
   --header 'Content-Type: application/json' \
   --data '{
   "resourceInstanceUsage": true,
@@ -20,4 +22,4 @@ This repository contains a Flask application that provides an API for fetching I
   "regionCodes": ["ca-tor","us-south"],
   "accountId": "<account-id>",
   "billMonth": "2024-01"
-}'
+}'```
