@@ -7,19 +7,21 @@ This repository contains a Flask application that provides an API for fetching I
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your_username/your_repository.git
+   git clone https://github.com:ankuratudemy/IBM-Billing-API.git
    cd your_repository
 
-2. run app.py as api locally:
+2. **run app.py as api locally:**
 
-   **python app.py**
+   ```bash
+   python app.py
 
-curl --location 'http://127.0.0.1:5000/billing' \
-  --header 'Content-Type: application/json' \
-  --data '{
-  "resourceInstanceUsage": true,
-  "apiKey": "<apiKey>",
-  "regionCodes": ["ca-tor","us-south"],
-  "accountId": "<account-id>",
-  "billMonth": "2024-01"
-}'
+   curl --location 'http://127.0.0.1:5000/billing' \
+   --header 'Content-Type: application/json' \
+   --data '{
+   "resourceInstanceUsage": true,
+   "apiKey": "<apiKey>",
+   "regionCodes": ["ca-tor","us-south"],
+   "accountId": "<account-id>",
+   "billMonth": "2024-01"
+   }'
+
